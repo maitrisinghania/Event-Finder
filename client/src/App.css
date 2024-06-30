@@ -1,0 +1,322 @@
+body {
+
+  background-image: url('./background.jpg');
+  max-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-attachment: fixed;
+
+}
+
+/* #search:focus{
+  border: 1px solid white ;
+  border-radius: 10px;
+} */
+
+/* .focus_nav:focus{
+  border: 1px solid white ;
+  border-radius: 10px;
+} */
+
+.active {
+  border: 1px solid white !important;
+  border-radius: 10px !important;
+}
+
+.inactive {
+  border: 0px !important;
+  border-radius: 0px !important;
+}
+
+
+
+#form {
+  text-align: initial;
+  padding: 20px;
+  background-color: rgb(107 113 111 / 48%);
+  border-radius: 20px;
+  margin-bottom: 50px;
+  width: 40%;
+  backdrop-filter: blur(6px);
+
+
+}
+
+#event_search {
+  font-weight: 300;
+  font-size: 30px;
+  text-align: center;
+  font-family: auto;
+  border-bottom: 2px solid white;
+}
+
+#keyword {
+  width: 35rem;
+}
+
+.buttons {
+  text-align: center;
+}
+
+#events_table {
+  width: 70%;
+  border-radius: 10px !important;
+
+}
+
+#card_id {
+
+  padding: 20px;
+  background-color: rgb(107 113 111 / 48%);
+  border-radius: 0px !important;
+  margin-bottom: 50px;
+  width: 70%;
+  backdrop-filter: blur(6px);
+
+}
+
+#card_nav.navbar-nav>.active>button {
+  background-color: b;
+}
+
+.heart {
+  
+  
+  margin-top: 7px!important;
+  width: 70px;
+  outline: none;
+ 
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+.heart_active {
+  color: red;
+  font-size: 25px;
+  padding-left: 4px;
+  padding-right: 4px;
+
+}
+
+.heading {
+  color: rgb(157 255 246);
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: bold !important;
+}
+
+.artists_heading {
+  color: rgb(157 255 246);
+
+  font-family: sans-serif;
+
+}
+
+.nav-tabs .nav-item.show .nav-link,
+
+.nav-tabs .nav-link.active {
+
+  background-color: transparent !important;
+
+  border-top: 0px !important;
+
+  border-left: 0px !important;
+
+  border-right: 0px !important;
+
+  border-radius: 0% !important;
+  border-color: blue !important;
+  
+
+}
+
+
+
+#card_nav.navbar-nav>.active>button {
+
+  background-color: transparent;
+
+}
+
+
+
+.nav-tabs .nav-item {
+
+  border-top: 0px !important;
+
+  border-left: 0px !important;
+
+  border-right: 0px !important;
+
+
+
+}
+
+
+
+.nav-tabs .nav-item :hover {
+
+  border: 0px !important;
+
+}
+
+
+
+.nav-tabs .nav-link {
+
+  color: white !important;
+  transition: none ! important;
+
+}
+.carousel-control-prev {
+  height: 2rem !important;
+  
+  margin-top: 35% !important;
+  margin-bottom: 50% !important;
+}
+.carousel-control-next {
+  height: 2rem !important;
+  
+  margin-top: 35% !important;
+  margin-bottom: 50% !important;
+}
+#album_featuring{
+  margin-top: 1rem !important;
+    margin-left: 6rem !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+}
+
+#popularity_bar{
+  width: 35% !important;
+  margin-left: 2rem !important;
+}
+#spotify_link{
+  color: green !important;
+  
+}
+.no_data{
+  margin-top: 8rem;
+    /* background: transparent; */
+    font-size: 21px;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 20px;
+    /* width: 98%; */
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+.artist_names{
+  font-size: 25px !important;
+  font-weight: bold !important;
+}
+
+.venue_heading{
+
+  color: rgb(157 255 246);
+
+  font-family: sans-serif;
+
+  font-size: 20px;
+  font-weight: bold;
+
+
+}
+.show_more_less{
+  color: rgb(107, 166, 248);
+  text-decoration: underline;
+  font-size: 12px;
+}
+.show-more-less-clickable{
+  fill:black !important;
+  stroke: white !important;
+  
+}
+#button_modal{
+  background-color: black;
+  color: white;
+  align-items: flex-start !important;
+}
+
+@media only screen and (max-width: 390px) {
+
+ 
+#form{
+  width: 88%;
+  backdrop-filter: blur(6px) !important;
+}
+#keyword {
+  width: 18rem !important;
+}
+
+#event_search {
+  font-weight: 300;
+  font-size: 45px;
+  text-align: center;
+  font-family: auto;
+  border-bottom: 2px solid white;
+  padding: 10px;
+  margin-bottom: 25px;
+  margin-top: 0px;
+  
+}
+
+#distance{
+  width: 285px !important;
+}
+
+#navbar_{
+  height: 94px !important;
+  background: none !important;
+}
+.fav_table{
+  width: 404px !important;
+
+}
+.fav_list{
+  width: 266px;
+}
+.nav_search_fav{
+  margin-right: 1rem ;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-end !important;
+   
+}
+.nav_fav{
+  padding: 8px !important;
+    margin-left: 10px;
+}
+#events_table {
+  width: 90% !important;
+  border-radius: 10px !important;
+}
+#card_{
+ 
+  width: 95% !important;
+}
+.no_data{
+  margin-top: 100px !important;
+    width: 324px !important;
+    margin-left: 0px !important;
+}
+
+.venue_tab{
+  flex-direction: column !important;
+    align-items: center !important;
+}
+
+.image_artist{
+ display:block !important;
+    align-items: center !important;
+    width:100px !important;
+}
+
+
+}
+
+
+
