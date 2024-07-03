@@ -204,7 +204,7 @@ export default class FormComp extends Component {
     var longitude;
     var latitude;
 
-    await fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${location}&key=AIzaSyBLaW8canq4wF2xpICnYkxpE0i8Y3b07u0`)
+    await fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${location}&key=<Your Key>`)
       .then((res) => res.json())
       .then((data) => {
         console.log("geocode:", data)

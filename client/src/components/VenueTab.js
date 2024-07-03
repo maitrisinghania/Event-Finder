@@ -149,7 +149,7 @@ console.log("center point",center_point)
 
               <Modal.Body>             
 
-                <LoadScript googleMapsApiKey="AIzaSyDhYRtxU_R7e4a1U01snOJu3vj5LoEkS0I" >
+                <LoadScript googleMapsApiKey="<Your Key>" >
                   <GoogleMap
                     mapContainerStyle={containerStyle}
                     center={center_point}
