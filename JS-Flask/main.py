@@ -37,7 +37,7 @@ def events():
 @app.route('/event_details')
 def event_details():
 
-    apikey= 'tl9YgQAGCVrRhB9RGEJCjae9oIMtImav'
+    apikey= '<Your Key>'
     event_id=request.args['event_id']
     
     r = requests.get(f'https://app.ticketmaster.com/discovery/v2/events/{event_id}?apikey={apikey}')
@@ -48,7 +48,7 @@ def event_details():
 @app.route('/venue')
 def venue():
 
-    apikey= 'tl9YgQAGCVrRhB9RGEJCjae9oIMtImav'
+    apikey= '<Your Key>'
     venue=request.args['venue']
     r = requests.get(f'https://app.ticketmaster.com/discovery/v2/venues?apikey={apikey}&keyword={venue}')
 
