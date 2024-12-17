@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">   
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script type="text/javascript" src="static/scripts.js"></script>
+
+</head>
+
+<body class="bg-img">
+    <div id="old">
+
+        <div id="parent">
+
+            <input type="hidden" id="selectedVenue" value="">
+            <input type="hidden" id="selectedVenueName" value="">
+
+            <!-- form for inputs -->
+            <form action="" onsubmit="return false;" class="form">
+
+                <div>
+
+                    <div id="form_div">
+
+                        <h2 class="formlabelColr" id="event_search">
+                            Events Search</h2>
+                        <div id="h2_div"></div>
+
+                    </div>
+                    <div class="formItem">
+
+                        <label class="formlabelColr" for="keyword">Keyword<span class="asterisk">*</span></label><br />
+                        <input type="text" id="keyword" value="" required>
+
+                    </div>
+                    <div class="formItem" id="distance_category">
+
+                        <div id="distance_div">
+
+                            <label for="distance" class="formlabelColr">Distance(miles)</label><br />
+                            <input type="number" id="distance" placeholder="10" value="10">
+
+                        </div>
+
+                        <div id="category_div">
+
+                            <label for="category" class="formlabelColr">Category<span class="asterisk">*</span></label><br />
+                            <select id="category">
+                                <option value="empty" selected>Default</option>
+                                <option value="KZFzniwnSyZfZ7v7nJ">Music</option>
+                                <option value="KZFzniwnSyZfZ7v7nE">Sports</option>
+                                <option value="KZFzniwnSyZfZ7v7na">Arts & Theatre</option>
+                                <option value="KZFzniwnSyZfZ7v7nn">Film</option>
+                                <option value="KZFzniwnSyZfZ7v7n1">Miscellaneous</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="formItem" id="location_div">
+
+                        <div>
+                            <label class="formlabelColr" for="location">Location<span id="loc_asterisk">*</span></label>
+                            <input type="checkbox" id="checkbox" onclick="checkbox_checked(this)">
+                            <label class="formlabelColr" for="checkbox" id="auto_detect">Auto-Detect Location</label>
+                        </div>
+                        <input type="text" id="location" required>
+
+                    </div>
+                    <div class="buttons">
+
+                        <button class="btn" id="search" onclick="on_click()" value="Search">Search</button>
+                        <button class="btn" type="button" id="clear" onclick="clear_btn()">Clear</button>
+
+                    </div>
+                </div>
+            </form>
+
+
+            <!-- clear button objects to be cleared  -->
+            <div id="clear_btn_div">
+
+                <div id="child_clear_div">
+
+                    <div class="loader" id="_loader"></div>
+                    <!-- events table -->
+                    <div id="table_content">
+
+                        <table id="events"></table>
+
+                    </div>
+
+                    <!-- no record  -->
+                    <div id="no_record">
+                        <span id="span_no_record">No Records found</span>
+                    </div>
+
+                    <!-- event detail card -->
+                    <div id="parent_EventDetail">
+
+                        <div id="child_EventDetail_1">
+                            <div id="eventNameDiv">
+                                <h2 class="eventDetailColr" id="eventName">The Batman In Concert</h2>
+                            </div>
+
+                            <div id="event_flex_div">
+
+                                <div id="child_EventDetail"></div>
+                                <div id="eventImage">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="show_VenueDetail">
+                            <div id="show_VenueDetailBtn" onclick="showVenue()">
+
+                                <span id="venue_detail_span">Show Venue Details</span><br />
+                                <div id="scroll_arrow">
+
+                                    <div id="arrow1_div"></div>
+                                    <div id="arrow2_div"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- for venue card -->
+                    <div id="showVenueDetailRender">
+                        <div id="old_ShowVenueDetail">
+                            <div id="parent_ShowVenueDetail">
+                                <div id="child_ShowVenueDetail">
+                                    <div id="venueHeader">
+                                        <div id="venue_div1">
+
+                                            <h1 id="_VenueName"></h1>
+                                            <div id="h1_div"></div>
+
+                                            <div>
+                                                <img id="venue_DetailImg" src="" width="100" height="50">
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div id="venue_otherDetail">
+
+                                        <div id="venue_Address_Link">
+
+                                            <div id="venue_Address">
+
+                                                <span id="address">Address:</span>                                                
+                                                <div id="address_div">
+                                                    <span id="_VenueAddress"></span>
+                                                    <span id="_VenueCity"></span>
+                                                    <span id="_VenuePostalCode"></span>
+                                                </div>
+
+                                            </div>
+
+                                            <div id="venue_Link"></div>
+
+                                        </div>
+                                        
+                                        <div id="underline"></div>
+                                        <div id="otherEvent_Venue"></div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+   
+
+</body>
+
+</html>
