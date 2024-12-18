@@ -1,5 +1,6 @@
 <h1>Event-Finder </h1>
-<p><a href="http://eventfinder-app-env.eba-sqghrjmd.us-east-1.elasticbeanstalk.com/" target="_blank"></a>Web App Link</p>
+<p style="font-size: 0.6em;"><a href="http://eventfinder-app-env.eba-sqghrjmd.us-east-1.elasticbeanstalk.com/" target="_blank">Web App Link</a></p>
+
 
 Web and Android Project 
 
