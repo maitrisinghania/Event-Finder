@@ -1,4 +1,4 @@
-# Event-Finder
+# Event-Finder [Hosted Web App](http://eventfinder-app-env.eba-sqghrjmd.us-east-1.elasticbeanstalk.com/)
 Web and Android Project 
 
 Finding events near a location using Ticketmaster API, using IPInfo and Geocoding APIs to handle the location specifics of the app, and using Spotify API to showcase Artist information.
