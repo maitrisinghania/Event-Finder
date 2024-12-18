@@ -1,9 +1,9 @@
-<div style="display: flex; align-items: center;">
-  <h1 style="margin-right: 10px;">Event-Finder</h1>
-  <p style="font-size: 0.6em; margin: 0;">
-    <a href="http://eventfinder-app-env.eba-sqghrjmd.us-east-1.elasticbeanstalk.com/" target="_blank">Web App Link</a>
-  </p>
-</div>
+<table>
+  <tr>
+    <td><h1>Event-Finder</h1></td>
+    <td><p style="font-size: 0.6em; margin: 0;"><a href="http://eventfinder-app-env.eba-sqghrjmd.us-east-1.elasticbeanstalk.com/" target="_blank">Web App Link</a></p></td>
+  </tr>
+</table>
 
 
 
